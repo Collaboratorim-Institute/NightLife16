@@ -1,6 +1,6 @@
 /************************
  * Company | Collaboratorium Institute
- * Department | Academy of Science
+ * Partiner | Academy of Science
  * Project | Night Life
  * Name | William Felker and Adam Lukasik
  * Build | Version 1.0
@@ -17,17 +17,13 @@ int DELAY = 100;
 void setup() {
   pinMode(boardLed,OUTPUT);
   pinMode(snsrMicrophone,INPUT);
-
   Serial.begin(9600);
   while(!Serial.available()) Particle.process();
-
   Serial.println(myID);
   String myID = System.deviceID();
 }
 
 void loop() {
-
-
   checkSensor();
   //troubleshoot();
 }

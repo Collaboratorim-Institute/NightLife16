@@ -24,29 +24,7 @@ void setup() {
 }
 
 void loop() {
-  checkSensor();
-  //troubleshoot();
-}
-
-
-// FUNCTIONS //
-void checkSensor(){
-
-  String noiseLevel = analogRead(snsrMicrophone); // store temp in "noiseLevel" string
-    Particle.publish("Noise Level", noiseLevel, PRIVATE); // publish to cloud
+    String noiseLevel = analogRead(snsrMicrophone); // store temp in "noiseLevel" string
+    Particle.publish("Noise Level", string(noiseLevel), PUBLIC); // publish to cloud
     delay(5000);
-
-/*
-      Particle.publish("Noise Level", analogRead(snsrMicrophone);, PRIVATE);
-      delay(5000); // 5 second delay
-*/
-/*
-    String temperature = String(fahrenheit); // store temp in "temperature" string
-      Particle.publish("Noise Level", temperature, PRIVATE); // publish to cloud
-      delay(5000); // 5 second delay
-*/
-}
-
-void troubleshoot(){
-
 }

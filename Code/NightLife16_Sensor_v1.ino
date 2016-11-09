@@ -9,7 +9,7 @@
 
 // DEFINE VARABLES //
 int boardLed = D7;
-int snsrMicrophone = A*;
+int snsrMicrophone = A1;
 int DELAY = 100;
 
 #define myID
@@ -18,13 +18,12 @@ void setup() {
   pinMode(boardLed,OUTPUT);
   pinMode(snsrMicrophone,INPUT);
   Serial.begin(9600);
-  while(!Serial.available()) Particle.process();
-  Serial.println(myID);
-  String myID = System.deviceID();
 }
 
 void loop() {
-    String noiseLevel = analogRead(snsrMicrophone); // store temp in "noiseLevel" string
-    Particle.publish("Noise Level", string(noiseLevel), PUBLIC); // publish to cloud
+    digitalWrite(boardLed,HIGH);
+    //String noiseLevel = analogRead(snsrMicrophone); // store temp in "noiseLevel" string
+    Particle.publish("Noise Level", String(analogRead(snsrMicrophone)), PUBLIC); // publish to cloud
+    digitalWrite(boardLed,LOW);
     delay(5000);
 }

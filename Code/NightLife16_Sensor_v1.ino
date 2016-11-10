@@ -23,7 +23,7 @@ void setup() {
 void loop() {
     digitalWrite(boardLed,HIGH);
     //String noiseLevel = analogRead(snsrMicrophone); // store temp in "noiseLevel" string
-    Particle.publish("Noise Level", String(analogRead(snsrMicrophone)), PUBLIC); // publish to cloud
+    Particle.publish("nl", String(analogRead(snsrMicrophone)), PUBLIC); // publish to cloud
     digitalWrite(boardLed,LOW);
-    delay(5000);
+    delay(500);
 }

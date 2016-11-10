@@ -1,0 +1,164 @@
+{
+  "snapOnDrag" : true,
+  "millVersion" : 2,
+  "version" : 4,
+  "fixturing" : {
+    "spoilboard" : {
+      "stockRegistration" : 0
+    },
+    "bracket" : null
+  },
+  "plans" : [
+    "63886D27-6400-412F-8C9A-C6B4761D28BD",
+    "92755354-E744-40AF-A199-B5C67BB03421",
+    "63DEF57B-DF56-42F0-98B6-F0295A328BEE"
+  ],
+  "stock" : {
+    "height" : 101.6,
+    "depth" : 1.64,
+    "flipped" : true,
+    "laminate" : "8D174BD6-C35D-4CCA-9A16-32EE5E9C251D",
+    "offset" : {
+      "y" : 9.440000000000001,
+      "b" : 0,
+      "z" : 0,
+      "x" : 7.249000000000001,
+      "a" : 0,
+      "c" : 0
+    },
+    "width" : 127,
+    "name" : "(unknown)",
+    "zrotation" : 0
+  },
+  "displayUnits" : "mm",
+  "showDimensions" : true,
+  "otherplanVersionName" : "release-build",
+  "currentJobUUID" : null,
+  "tools" : [
+    {
+      "group" : "Endmill",
+      "conductive" : "yes",
+      "flutes" : 4,
+      "name" : "1\/8in Flat End Mill",
+      "profile" : [
+        [
+          3.175,
+          38.57,
+          0,
+          0
+        ],
+        [
+          3.175,
+          16,
+          0,
+          -1
+        ],
+        [
+          3.175,
+          13,
+          0,
+          1
+        ],
+        [
+          3.175,
+          0,
+          0,
+          1
+        ]
+      ],
+      "uuid" : "B5D88C4F-4FA2-4D0A-B6C2-1485F3CAB73B"
+    },
+    {
+      "group" : "Endmill",
+      "conductive" : "yes",
+      "flutes" : 4,
+      "name" : "1\/8in Flat End Mill",
+      "profile" : [
+        [
+          3.175,
+          38.57,
+          0,
+          0
+        ],
+        [
+          3.175,
+          16,
+          0,
+          -1
+        ],
+        [
+          3.175,
+          13,
+          0,
+          1
+        ],
+        [
+          3.175,
+          0,
+          0,
+          1
+        ]
+      ],
+      "uuid" : "B5D88C4F-4FA2-4D0A-B6C2-1485F3CAB73B"
+    },
+    {
+      "group" : "Endmill",
+      "conductive" : "yes",
+      "flutes" : 4,
+      "name" : "1\/8in Flat End Mill",
+      "profile" : [
+        [
+          3.175,
+          38.57,
+          0,
+          0
+        ],
+        [
+          3.175,
+          16,
+          0,
+          -1
+        ],
+        [
+          3.175,
+          13,
+          0,
+          1
+        ],
+        [
+          3.175,
+          0,
+          0,
+          1
+        ]
+      ],
+      "uuid" : "B5D88C4F-4FA2-4D0A-B6C2-1485F3CAB73B"
+    }
+  ],
+  "showMotionPlan" : true,
+  "otherplanVersion" : "0.14.7",
+  "stepSize" : 1,
+  "laminates" : [
+    {
+      "uuid" : "8D174BD6-C35D-4CCA-9A16-32EE5E9C251D",
+      "group" : "Circuit Board",
+      "maxDepth" : 1.8,
+      "name" : "Double-Sided FR-1 L2",
+      "minDepth" : 1,
+      "layers" : [
+        {
+          "fixed" : 0.1,
+          "material" : "copper"
+        },
+        {
+          "float" : 1.44,
+          "material" : "phenolic"
+        },
+        {
+          "fixed" : 0.1,
+          "material" : "copper"
+        }
+      ]
+    }
+  ]
+}
